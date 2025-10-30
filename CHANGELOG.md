@@ -65,6 +65,6 @@
 
 ---
 
-[Unreleased]: https://github.com/nix-fit/buildingblocks/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/nix-fit/buildingblocks/releases/tag/v1.0.0
+[Unreleased]: https://github.com/nix-fit/building-blocks/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/nix-fit/building-blocks/releases/tag/v1.0.0
 

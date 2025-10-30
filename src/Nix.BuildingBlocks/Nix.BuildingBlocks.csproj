@@ -12,7 +12,7 @@
     <Company>Nix</Company>
     <Description>Общие building blocks для микросервисов FitCourse: Domain entities, Events, Result, Guard, Outbox</Description>
     <PackageTags>fitcourse;nix;ddd;domain-driven-design;building-blocks;cqrs</PackageTags>
-    <RepositoryUrl>https://github.com/nix-fit/buildingblocks</RepositoryUrl>
+    <RepositoryUrl>https://github.com/nix-fit/building-blocks</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     

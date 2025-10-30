@@ -12,7 +12,7 @@
     <Company>Nix</Company>
     <Description>Контракты интеграционных событий (Integration Events) для межсервисного взаимодействия FitCourse</Description>
     <PackageTags>fitcourse;nix;contracts;integration-events;messaging</PackageTags>
-    <RepositoryUrl>https://github.com/nix-fit/buildingblocks</RepositoryUrl>
+    <RepositoryUrl>https://github.com/nix-fit/building-blocks</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     
     <!-- Генерация символов для отладки -->
