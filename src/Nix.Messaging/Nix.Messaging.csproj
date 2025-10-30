@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <!-- NuGet Package Metadata -->
+    <PackageId>FitCourse.Nix.Messaging</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Nix Team</Authors>
+    <Company>Nix</Company>
+    <Description>Messaging abstractions и MassTransit integration для FitCourse микросервисов</Description>
+    <PackageTags>fitcourse;nix;messaging;masstransit;rabbitmq;event-bus</PackageTags>
+    <RepositoryUrl>https://github.com/nix-fit/buildingblocks</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    
+    <!-- Генерация символов для отладки -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" />
+    <PackageReference Include="MassTransit.RabbitMQ" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- В NuGet пакете это будет PackageReference -->
+    <PackageReference Include="FitCourse.Nix.BuildingBlocks" Version="1.0.0" Condition="'$(Configuration)' == 'Release'" />
+    
+    <!-- Для локальной разработки используем ProjectReference -->
+    <ProjectReference Include="..\Nix.BuildingBlocks\Nix.BuildingBlocks.csproj" Condition="'$(Configuration)' != 'Release'" />
+  </ItemGroup>
+
+</Project>
