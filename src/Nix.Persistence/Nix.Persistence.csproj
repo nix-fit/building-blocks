@@ -28,7 +28,7 @@
 
   <ItemGroup>
     <!-- В NuGet пакете это будет PackageReference -->
-    <PackageReference Include="FitCourse.Nix.BuildingBlocks" Version="1.0.0" Condition="'$(Configuration)' == 'Release'" />
+    <PackageReference Include="FitCourse.Nix.BuildingBlocks" Condition="'$(Configuration)' == 'Release'" />
     
     <!-- Для локальной разработки используем ProjectReference -->
     <ProjectReference Include="..\Nix.BuildingBlocks\Nix.BuildingBlocks.csproj" Condition="'$(Configuration)' != 'Release'" />
